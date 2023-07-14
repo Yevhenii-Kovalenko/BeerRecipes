@@ -1,0 +1,36 @@
+
+.recipeList h1 {
+  margin-top: 20px;
+  letter-spacing: 5px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.recipeList ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.btn{
+  width: 100px;
+  padding: 15px;
+  border-radius: 10px;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  background-color: rgb(68, 126, 192);
+  border: none;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.loading{
+  font-size: 50px;
+  position: absolute;
+  top: 50vh;
+  left: 50vh;
+
+}

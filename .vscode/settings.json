@@ -1,0 +1,25 @@
+{
+  // Editor
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // Eslint
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "reactjavascript"],
+
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // HTML
+  "html.validate.scripts": false,
+}
