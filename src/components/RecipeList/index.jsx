@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import Recipe from './Recipe';
 import styles from './RecipeList.module.css';
-import useStore from './store';
+import useStore from '../../store';
+import Recipe from '../Recipe';
 
 function RecipeList() {
   const { recipes, fetchRecipes, selectedRecipes, toggleRecipeSelection, removeSelectedRecipes } =

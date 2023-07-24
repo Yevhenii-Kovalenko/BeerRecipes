@@ -4,6 +4,8 @@ import { create } from 'zustand';
 const useStore = create((set) => ({
   recipes: [],
   selectedRecipes: [],
+  recipeDetails: null,
+  setRecipeDetails: (details) => set({ recipeDetails: details }),
   fetchRecipes: async () => {
     try {
       const response = await axios.get('https://api.punkapi.com/v2/beers?page=1&per_page=15');

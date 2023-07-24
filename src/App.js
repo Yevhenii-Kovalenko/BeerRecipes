@@ -2,8 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
-
-import RecipeDetails from './components/RecipeDetails';
+import RecipeDetails from './components/RecipeDetalis';
 import RecipeList from './components/RecipeList';
 
 function App() {

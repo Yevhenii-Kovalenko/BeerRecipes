@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import axios from 'axios';
 
 import styles from './RecipeDetails.module.css';
+import useStore from '../../store';
 
 export default function RecipeDetails() {
   const { id } = useParams();
-  const [recipeDetails, setRecipeDetails] = useState(null);
+  const { recipeDetails, setRecipeDetails } = useStore();
 
   useEffect(() => {
     const fetchRecipeDetails = async () => {
@@ -20,7 +21,7 @@ export default function RecipeDetails() {
       }
     };
     fetchRecipeDetails();
-  }, [id]);
+  }, [id, setRecipeDetails]);
 
   if (!recipeDetails) {
     return <p>Loading...</p>;
